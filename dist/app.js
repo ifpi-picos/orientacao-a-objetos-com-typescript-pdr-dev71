@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Curso_1 = require("./Curso");
+const Disciplina_1 = require("./Disciplina");
+const Professor_1 = require("./Professor");
+let curso = new Curso_1.Curso("Historia");
+let disciplina1 = new Disciplina_1.Disciplina("Ditadura cubana", 80);
+let disciplina2 = new Disciplina_1.Disciplina("historia do Brasil", 200);
+let professor = new Professor_1.Professor("Carlos");
+disciplina1.adicionaProfessor(professor);
+disciplina2.adicionaProfessor(professor);
+curso.adicionaDisciplina(disciplina1);
+curso.adicionaDisciplina(disciplina2);
+console.log("Curso: ", curso);
